@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-10-04T07:10:26Z" product-name="pits_googlecse">
+		<header/>
+		<body>
+			<trans-unit id="tx_pitsgooglecse_domain_model_search">
+				<source>Search</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

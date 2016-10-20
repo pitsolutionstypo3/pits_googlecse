@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-10-04T07:10:26Z" product-name="pits_googlecse">
+		<header/>
+		<body>
+			<trans-unit id="tx_pitsgooglecse_domain_model_search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_wizard.title">
+				<source>Google CSE</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_wizard.description">
+				<source>Add custom google search box</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.api">
+				<source>Enter your google API key</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.lang">
+				<source>Choose an interface language</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.image">
+				<source>Enable imagesearch (The option must be set ON in CSE control panel)</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.fix">
+				<source>Force searchbox</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.thumbs">
+				<source>Thumbnails in search results</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.autocomplete">
+				<source>Enable auto-complete</source>
+			</trans-unit>
+			<trans-unit id="tx_googlecse_plugin.overlayresults">
+				<source>Display search results in an overlay</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

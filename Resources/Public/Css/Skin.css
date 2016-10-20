@@ -1,0 +1,19 @@
+.pits_googlecse {
+	overflow-x: auto;
+}
+
+.pits_googlecse table td {
+	padding: 5px;
+}
+
+.pits_googlecse table input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:checked+label { 
+	font-weight: bold; 
+}

@@ -1,0 +1,32 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:render partial="Search/Properties" arguments="{values:values}" />
+<div class="col-md-6 col-md-offset-3">
+    <div id='cse' style='width: 100%;'>Loading</div>
+</div>
+<script src='//www.google.com/jsapi' type='text/javascript'></script>
+
+<script type='text/javascript'>
+google.load('search', '1', {language: '<f:format.raw>{values.flexform.lang}</f:format.raw>', style: <f:format.raw>{values.flexform.theme}</f:format.raw> });
+google.setOnLoadCallback(function() {
+  var customSearchOptions = {};
+  var orderByOptions = {};
+  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'} , {label: 'Images', key: 'images'}];
+  customSearchOptions['enableOrderBy'] = true;
+  customSearchOptions['orderByOptions'] = orderByOptions;
+  var imageSearchOptions = {};
+  imageSearchOptions['layout'] = '<f:format.raw>{values.flexform.imagelayout}</f:format.raw>';
+  customSearchOptions['enableImageSearch'] = {values.flexform.imagesearch};
+  customSearchOptions['overlayResults'] = {values.flexform.overlayresults};
+  var customSearchControl =   new google.search.CustomSearchControl('{values.flexform.api}', customSearchOptions);
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(<f:format.raw>{values.flexform.autocomplete}</f:format.raw>);
+  customSearchControl.draw('cse', options);
+}, true);
+</script>
+
+</f:section>

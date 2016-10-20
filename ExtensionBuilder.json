@@ -1,0 +1,90 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    136,
+                    150
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "searchbox",
+                        "results"
+                    ]
+                },
+                "name": "Search",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "963992458033"
+                },
+                "propertyGroup": {
+                    "properties": []
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "The best ever search engine now for your website..\n\nWith Google Custom Search, add a search box to your homepage to help people find what they need on your website with the same technology that drives google search.. Tadaa !!!\n\nPresenting Google CSE.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2.0-8.3.0\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "version": "0.0.1"
+        },
+        "extensionKey": "pits_googlecse",
+        "name": "Google CSE",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "PIT Solutions",
+                "email": "anu.bn@pitsolutions.com",
+                "name": "Anu Bhuvanendran Nair",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": "Search Box\nSearch->searchbox; Search->results\nResults View\nSearch->results; Search->searchbox"
+                },
+                "key": "pitsgooglecse",
+                "name": "Google CSE"
+            }
+        ],
+        "vendorName": "PITS"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-10-04 07:10",
+        "extension_builder_version": "6.2",
+        "be_user": " (1)"
+    }
+}
