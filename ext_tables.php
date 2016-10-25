@@ -30,3 +30,13 @@ $GLOBALS['TBE_STYLES']['skins'][$_EXTKEY] = array(
             'css' => 'EXT:pits_googlecse/Resources/Public/Css/'
         )
     );
+
+/**
+ * Register icons
+ */
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry->registerIcon(
+    'extension-pits_googlecse-main',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => 'EXT:pits_googlecse/Resources/Public/Icons/google_cse_32.png']
+);

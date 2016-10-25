@@ -17,7 +17,7 @@ class BackendUtility
      * @var array
      */
     public $removedFieldsInResultsView = [
-        'sDEF' => 'flexform.api,flexform.lang,flexform.imagesearch,flexform.theme,flexform.enablethumbs',
+        'sDEF' => 'flexform.api,flexform.lang,flexform.imagesearch,flexform.theme,flexform.enablethumbs,flexform.autocomplete,flexform.theme,flexform.enablethumbs,flexform.overlayresults',
         'additional' => '',
         'template' => ''
     ];
@@ -85,12 +85,15 @@ class BackendUtility
      */
     protected function deleteFromStructure(array &$dataStructure, array $fieldsToBeRemoved)
     {
-        foreach ($fieldsToBeRemoved as $sheetName => $sheetFields) {
-            $fieldsInSheet = GeneralUtility::trimExplode(',', $sheetFields, true);
 
+        foreach ($fieldsToBeRemoved as $sheetName => $sheetFields) {
+
+            $fieldsInSheet = GeneralUtility::trimExplode(',', $sheetFields, true);
+            
             foreach ($fieldsInSheet as $fieldName) {
                 unset($dataStructure['sheets'][$sheetName]['ROOT']['el']['settings.' . $fieldName]);
             }
         }
+        unset($dataStructure['sheets']['theme']);
     }
 }
