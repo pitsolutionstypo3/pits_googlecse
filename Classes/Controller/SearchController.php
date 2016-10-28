@@ -32,67 +32,60 @@ namespace PITS\PitsGooglecse\Controller;
  */
 class SearchController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
-	/**
-	 * searchRepository
-	 *
-	 * @var \PITS\PitsGooglecse\Domain\Repository\SearchRepository
-	 * @inject
-	 */
-	protected $searchRepository = NULL;
+    /**
+     * searchRepository
+     *
+     * @var \PITS\PitsGooglecse\Domain\Repository\SearchRepository
+     * @inject
+     */
+    protected $searchRepository = NULL;
 
-	/**
-	 * action default
-	 *
-	 * @return void
-	 */
-	public function defaultAction() {
-		$settings = $this->settings;
-		if($settings['flexform']['lang']=='**') {
-			$settings['flexform']['lang']='en';
-		}
-		$settings['flexform']['imagesearch']== 0 ? $settings['flexform']['imagesearch']='false': $settings['flexform']['imagesearch']='true';
-		$settings['flexform']['enablethumbs']== 0 ? $settings['flexform']['enablethumbs']='false': $settings['flexform']['enablethumbs']='true';
-		$settings['flexform']['overlayresults']== 0 ? $settings['flexform']['overlayresults']='false': $settings['flexform']['overlayresults']='true';
-		$style = $settings['flexform']['theme'];
-		switch($style){
-			case "google.loader.themes.V2_DEFAULT" :
-			$this->response->addAdditionalHeaderData('<link rel="stylesheet" type="text/css" href="typo3conf/ext/pits_googlecse/Resources/Public/Css/Default.css" media="all">');
-			break;
-		}
-		$this->view->assign('values', $settings);
-	}
+    /**
+     * action default
+     *
+     * @return void
+     */
+    public function defaultAction() {
+        $settings = $this->settings;
+        if($settings['flexform']['lang']=='**') {
+            $settings['flexform']['lang']='en';
+        }
+        $style = $settings['flexform']['theme'];
+        switch($style){
+            case "google.loader.themes.V2_DEFAULT" :
+            $this->response->addAdditionalHeaderData('<link rel="stylesheet" type="text/css" href="typo3conf/ext/pits_googlecse/Resources/Public/Css/Default.css" media="all">');
+            break;
+        }
+        $this->view->assign('values', $settings);
+    }
 
-	/**
-	 * action searchbox
-	 *
-	 * @return void
-	 */
-	public function searchboxAction() {
-		$settings = $this->settings;
-		if($settings['flexform']['lang']=='**') {
-			$settings['flexform']['lang']='en';
-		}
-		$settings['flexform']['imagesearch']== 0 ? $settings['flexform']['imagesearch']='false': $settings['flexform']['imagesearch']='true';
-		$settings['flexform']['enablethumbs']== 0 ? $settings['flexform']['enablethumbs']='false': $settings['flexform']['enablethumbs']='true';
-		$settings['flexform']['overlayresults']== 0 ? $settings['flexform']['overlayresults']='false': $settings['flexform']['overlayresults']='true';
-		$settings['flexform']['autocomplete']== 0 ? $settings['flexform']['autocomplete']='false': $settings['flexform']['autocomplete']='true';
-		$style = $settings['flexform']['theme'];
-		switch($style){
-			case "google.loader.themes.V2_DEFAULT" :
-			$this->response->addAdditionalHeaderData('<link rel="stylesheet" type="text/css" href="typo3conf/ext/pits_googlecse/Resources/Public/Css/Default.css" media="all">');
-			break;
-		}
-		$this->view->assign('values', $settings);
-	}
+    /**
+     * action searchbox
+     *
+     * @return void
+     */
+    public function searchboxAction() {
+        $settings = $this->settings;
+        if ($settings['flexform']['lang']=='**') {
+            $settings['flexform']['lang']='en';
+        }
+        $style = $settings['flexform']['theme'];
+        switch ($style){
+            case "google.loader.themes.V2_DEFAULT" :
+            $this->response->addAdditionalHeaderData('<link rel="stylesheet" type="text/css" href="typo3conf/ext/pits_googlecse/Resources/Public/Css/Default.css" media="all">');
+            break;
+        }
+        $this->view->assign('values', $settings);
+    }
 
-	/**
-	 * action results
-	 *
-	 * @return void
-	 */
-	public function resultsAction() {
-		$settings = $this->settings;
-		$this->view->assign('values', $settings);
-	}
+    /**
+     * action results
+     *
+     * @return void
+     */
+    public function resultsAction() {
+        $settings = $this->settings;
+        $this->view->assign('values', $settings);
+    }
 
 }

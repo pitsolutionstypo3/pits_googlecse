@@ -88,7 +88,7 @@ class BackendUtility
 
         foreach ($fieldsToBeRemoved as $sheetName => $sheetFields) {
 
-            $fieldsInSheet = GeneralUtility::trimExplode(',', $sheetFields, true);
+           $fieldsInSheet = GeneralUtility::trimExplode(',', $sheetFields, true);
             
             foreach ($fieldsInSheet as $fieldName) {
                 unset($dataStructure['sheets'][$sheetName]['ROOT']['el']['settings.' . $fieldName]);

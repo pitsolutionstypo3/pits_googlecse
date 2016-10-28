@@ -20,7 +20,7 @@ $TBE_MODULES_EXT['xMOD_db_new_content_el']['addElClasses']['Tx_Google_Cse_Wizzar
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_pitsgooglecse_domain_model_search', 'EXT:pits_googlecse/Resources/Private/Language/locallang_csh_tx_pitsgooglecse_domain_model_search.xlf');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_pitsgooglecse_domain_model_search');
 
-//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . "Classes/Utility/Fetchlanguage.php";
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . "Classes/Utility/Fetchlanguage.php";
 
 //Adding custom style sheets to the backend
 
