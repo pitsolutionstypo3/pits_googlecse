@@ -1,6 +1,6 @@
 # pits_googlecse
 
-![alt tag](http://demo.mypits.org:10039/fileadmin/user_upload/google%20cse.png)
+![alt tag](http://demo.mypits.org:10039/fileadmin/user_upload/cse.png)
 
 The best ever search engine now for your website..
 
