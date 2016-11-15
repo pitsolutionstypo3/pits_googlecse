@@ -11,28 +11,24 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Google CSE',
-	'description' => 'The best ever search engine now for your website..
-
-With Google Custom Search, add a search box to your homepage to help people find what they need on your website with the same technology that drives google search.. Tadaa !!!
-
-Presenting Google CSE.',
-	'category' => 'plugin',
-	'author' => 'Anu Bhuvanendran Nair',
-	'author_email' => 'anu.bn@pitsolutions.com',
-	'state' => 'alpha',
-	'internal' => '',
-	'uploadfolder' => '0',
-	'createDirs' => '',
-	'clearCacheOnLoad' => 0,
-	'version' => '0.0.1',
-	'constraints' => array(
-		'depends' => array(
-			'typo3' => '6.2.0-8.3.0',
-		),
-		'conflicts' => array(
-		),
-		'suggests' => array(
-		),
-	),
+    'title' => 'Google CSE',
+    'description' => 'This extension provides seamless integration of Google Custom Search for your website.With Google Custom Search, add a search box to your homepage to help people find what they need on your website.',
+    'category' => 'plugin',
+    'author' => 'Anu Bhuvanendran Nair',
+    'author_email' => 'anu.bn@pitsolutions.com',
+    'state' => 'stable',
+    'internal' => '',
+    'uploadfolder' => '0',
+    'createDirs' => '',
+    'clearCacheOnLoad' => 0,
+    'version' => '1.0.0',
+    'constraints' => array(
+        'depends' => array(
+            'typo3' => '6.2.0-8.4.99',
+        ),
+        'conflicts' => array(
+        ),
+        'suggests' => array(
+        ),
+    ),
 );
