@@ -2,7 +2,17 @@
 <f:layout name="Default" />
 
 <f:section name="main">
-
-<div id='cse' style='width: 100%;'></div>
-
+<f:render partial="Search/Properties" arguments="{values:values}" />
+<script>
+  (function() {
+    var cx = '{values.flexform.api}';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
 </f:section>

@@ -5,10 +5,9 @@
 
 <f:render partial="Search/Properties" arguments="{values:values}" />
 <div class="col-md-6 col-md-offset-3">
-    <div id='cse' style='width: 100%;'>Loading</div>
+    <gcse:search></gcse:search>
 </div>
 <script src='//www.google.com/jsapi' type='text/javascript'></script>
-
 <script type='text/javascript'>
     google.load('search', '1', {language: '<f:format.raw>{values.flexform.lang}</f:format.raw>', style: <f:format.raw>{values.flexform.theme}</f:format.raw> });
     google.setOnLoadCallback(function() {
@@ -27,6 +26,15 @@
         options.setAutoComplete(<f:format.raw>{values.flexform.autocomplete}</f:format.raw>);
         customSearchControl.draw('cse', options);
     }, true);
-</script>
 
+    (function() {
+        var cx = '{values.flexform.api}';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
 </f:section>

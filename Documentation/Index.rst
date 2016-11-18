@@ -61,3 +61,4 @@ Google CSE
 	Introduction/Index
 	UsersManual/Index
 	AdministratorManual/Index
+	Changelog/Index

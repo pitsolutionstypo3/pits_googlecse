@@ -17,7 +17,7 @@ class BackendUtility
      * @var array
      */
     public $removedFieldsInResultsView = [
-        'sDEF' => 'flexform.api,flexform.lang,flexform.imagesearch,flexform.theme,flexform.enablethumbs,flexform.autocomplete,flexform.theme,flexform.enablethumbs,flexform.overlayresults',
+        'sDEF' => 'flexform.lang,flexform.imagesearch,flexform.theme,flexform.enablethumbs,flexform.autocomplete,flexform.theme,flexform.enablethumbs,flexform.overlayresults',
         'additional' => '',
         'template' => ''
     ];
