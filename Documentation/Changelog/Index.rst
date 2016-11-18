@@ -17,7 +17,7 @@ Changelog
 |Version                 |Release Date  |Release Description        |
 |                        |              |                           |
 +========================+==============+===========================+
-|1.0.0                   |Nov 18, 2016  |* feature added to place   |
+|1.0.1                   |Nov 18, 2016  |* feature added to place   |
 |                        |              |  search box and resuls    |
 |                        |              |  view in seperate pages   |
 |                        |              |                           |
