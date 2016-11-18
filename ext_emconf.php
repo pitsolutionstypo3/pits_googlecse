@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Google CSE',
-    'description' => 'Google custom search for your very own website.',
+    'description' => 'This extension provides seamless integration of Google Custom Search for your website.With Google Custom Search, add a search box to your homepage to help people find what they need on your website.',
     'category' => 'plugin',
     'author' => 'Anu Bhuvanendran Nair',
     'author_email' => 'anu.bn@pitsolutions.com',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
     'version' => '1.0.0',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '6.2.0-8.3.0',
+            'typo3' => '6.2.0-8.4.99',
         ),
         'conflicts' => array(
         ),
