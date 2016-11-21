@@ -34,14 +34,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class SearchController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
     /**
-     * searchRepository
-     *
-     * @var \PITS\PitsGooglecse\Domain\Repository\SearchRepository
-     * @inject
-     */
-    protected $searchRepository = NULL;
-
-    /**
      * action default
      *
      * @return void
